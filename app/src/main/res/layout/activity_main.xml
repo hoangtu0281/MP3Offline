@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shap_drawble"
+    android:orientation="vertical"
+    tools:context="com.example.hoangtu.mp3offline.MainActivity">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:id="@+id/lvSong"
+        android:layout_height="430dp">
+    </ListView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="02/30"
+            android:layout_marginLeft="20dp"
+            android:textColor="#0070df"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <SeekBar
+            android:layout_width="match_parent"
+            android:id="@+id/sbTime"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="9">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="100dp"
+                android:id="@+id/imvPrevious"
+                android:layout_height="wrap_content"
+                android:src="@drawable/previoustrack" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="100dp"
+                android:id="@+id/imvPlay"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pause" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="100dp"
+                android:id="@+id/imvNext"
+                android:layout_height="wrap_content"
+                android:src="@drawable/nexttrack" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
